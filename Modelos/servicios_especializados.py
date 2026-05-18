@@ -1,65 +1,66 @@
-# =========================================
-# SERVICIOS ESPECIALIZADOS
-# =========================================
-
-# Importamos Servicio
 from Modelos.servicio import Servicio
 
 # =========================================
-# RESERVA DE SALAS
+# RESERVA SALA
 # =========================================
 
 class ReservaSala(Servicio):
 
-    # Constructor
-    def __init__(self, nombre, costo_base, horas):
+    def __init__(
+        self,
+        nombre,
+        costo_base
+    ):
 
         super().__init__(
             nombre,
             costo_base
         )
 
-        self.horas = horas
-
-    # Polimorfismo
-    def calcular_costo(self):
-
-        return self.costo_base * self.horas
-
-    # Descripción
-    def descripcion(self):
+    def calcular_costo(
+        self,
+        duracion
+    ):
 
         return (
-            f"Reserva de sala por "
-            f"{self.horas} horas"
+            self.costo_base *
+            duracion
         )
 
+    def descripcion(self):
+
+        return "Reserva Sala"
+
 # =========================================
-# ALQUILER EQUIPOS
+# ALQUILER EQUIPO
 # =========================================
 
 class AlquilerEquipo(Servicio):
 
-    def __init__(self, nombre, costo_base, dias):
+    def __init__(
+        self,
+        nombre,
+        costo_base
+    ):
 
         super().__init__(
             nombre,
             costo_base
         )
 
-        self.dias = dias
+    def calcular_costo(
+        self,
+        duracion
+    ):
 
-    # Polimorfismo
-    def calcular_costo(self):
-
-        return self.costo_base * self.dias
+        return (
+            self.costo_base *
+            duracion
+        )
 
     def descripcion(self):
 
-        return (
-            f"Alquiler de equipo por "
-            f"{self.dias} días"
-        )
+        return "Alquiler Equipo"
 
 # =========================================
 # ASESORÍA ESPECIALIZADA
@@ -81,19 +82,31 @@ class AsesoriaEspecializada(Servicio):
 
         self.nivel = nivel
 
-    # Polimorfismo
-    def calcular_costo(self):
+    def calcular_costo(
+        self,
+        duracion
+    ):
 
-        # Validación nivel
         if self.nivel == "Avanzado":
 
-            return self.costo_base * 2
+            return (
 
-        return self.costo_base
+                self.costo_base *
+
+                duracion *
+
+                2
+            )
+
+        return (
+
+            self.costo_base *
+
+            duracion
+        )
 
     def descripcion(self):
 
         return (
-            f"Asesoría nivel "
-            f"{self.nivel}"
+            f"Asesoría {self.nivel}"
         )

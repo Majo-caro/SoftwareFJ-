@@ -1,40 +1,79 @@
-# =========================================
-# CLASE ABSTRACTA PERSONA
-# =========================================
-
-# Importamos ABC para crear clases abstractas
 from abc import ABC, abstractmethod
 
-# Clase abstracta
 class Persona(ABC):
 
-    # Constructor
-    def __init__(self, nombre, identificacion):
+    def __init__(
+        self,
+        nombre,
+        identificacion
+    ):
 
-        # Encapsulación de atributos
+        # =====================================
+        # VALIDAR NOMBRE
+        # =====================================
+
+        if not nombre.replace(
+            " ",
+            ""
+        ).isalpha():
+
+            raise ValueError(
+                "El nombre solo debe contener letras"
+            )
+
+        # =====================================
+        # VALIDAR IDENTIFICACIÓN
+        # =====================================
+
+        if not identificacion.isdigit():
+
+            raise ValueError(
+                "La identificación debe ser numérica"
+            )
+
+        # =====================================
+        # ATRIBUTOS PRIVADOS
+        # =====================================
+
         self.__nombre = nombre
         self.__identificacion = identificacion
 
-    # Getter del nombre
+    # =========================================
+    # GETTERS
+    # =========================================
+
     def get_nombre(self):
+
         return self.__nombre
 
-    # Setter del nombre
-    def set_nombre(self, nombre):
+    def get_identificacion(self):
 
-        # Validación
-        if nombre == "":
+        return self.__identificacion
+
+    # =========================================
+    # SETTERS
+    # =========================================
+
+    def set_nombre(
+        self,
+        nombre
+    ):
+
+        if not nombre.replace(
+            " ",
+            ""
+        ).isalpha():
+
             raise ValueError(
-                "El nombre no puede estar vacío"
+                "El nombre solo debe contener letras"
             )
 
         self.__nombre = nombre
 
-    # Getter identificación
-    def get_identificacion(self):
-        return self.__identificacion
+    # =========================================
+    # MÉTODO ABSTRACTO
+    # =========================================
 
-    # Método abstracto
     @abstractmethod
     def mostrar_info(self):
         pass

@@ -1,3 +1,46 @@
 2026-05-18 01:00:09.977669 -> Correo inválido
 2026-05-18 01:00:09.980640 -> Reserva confirmada
 2026-05-18 01:00:09.982686 -> ERROR: Duración inválida
+2026-05-18 02:41:48.033843 -> Cliente registrado
+2026-05-18 02:41:55.776448 -> Sistema finalizado
+2026-05-18 02:43:09.243253 -> Sistema finalizado
+2026-05-18 02:54:05.660142 -> Cliente registrado
+2026-05-18 02:55:05.687821 -> Reserva confirmada
+2026-05-18 03:08:21.547320 -> Correo inválido
+2026-05-18 03:08:21.548609 -> Reserva confirmada
+2026-05-18 03:08:21.550514 -> ERROR: Duración inválida
+2026-05-18 03:08:21.554197 -> division by zero
+2026-05-18 03:08:21.561997 -> Costo inválido
+2026-05-18 03:09:10.479633 -> Cliente registrado
+2026-05-18 03:10:14.764746 -> Reserva confirmada
+2026-05-18 03:21:05.834358 -> Correo inválido
+2026-05-18 03:21:05.835905 -> Reserva confirmada
+2026-05-18 03:21:05.837551 -> Duración inválida
+2026-05-18 03:21:05.839876 -> division by zero
+2026-05-18 03:21:05.841505 -> Costo inválido
+2026-05-18 03:21:36.752082 -> Cliente registrado
+2026-05-18 03:21:48.834815 -> Reserva confirmada
+2026-05-18 03:27:53.322581 -> Reserva confirmada
+2026-05-18 03:33:08.974864 -> Sistema finalizado
+2026-05-18 03:34:03.897399 -> Reserva confirmada
+2026-05-18 03:34:03.899311 -> Reserva creada
+2026-05-18 03:42:55.644363 -> Reserva confirmada
+2026-05-18 03:42:55.645954 -> Reserva creada
+2026-05-18 03:49:35.431169 -> Reserva confirmada
+2026-05-18 03:49:35.432864 -> Reserva creada
+2026-05-18 04:03:20.110423 -> Cliente registrado
+2026-05-18 04:03:34.104692 -> Reserva confirmada
+2026-05-18 04:03:34.106236 -> Reserva creada
+2026-05-18 04:37:38.525047 -> El nombre solo debe contener letras
+2026-05-18 04:42:48.499039 -> Reserva confirmada
+2026-05-18 04:43:20.215211 -> Reserva confirmada
+2026-05-18 04:43:51.136180 -> Duración inválida
+2026-05-18 04:47:55.678859 -> Duración inválida
+2026-05-18 04:58:56.909651 -> Duración inválida
+2026-05-18 05:02:49.413437 -> Duración inválida
+2026-05-18 05:07:04.251506 -> Duración inválida
+2026-05-18 05:11:29.536149 -> Duración inválida
+2026-05-18 05:12:57.363618 -> Reserva confirmada
+2026-05-18 05:13:14.774171 -> Reserva confirmada
+2026-05-18 05:13:40.358723 -> Reserva confirmada
+2026-05-18 05:14:21.692196 -> Reserva cancelada

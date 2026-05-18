@@ -1,0 +1,57 @@
+[
+    {
+        "nombre": "majo",
+        "identificacion": "1234",
+        "correo": "majo@gmail.com"
+    },
+    {
+        "nombre": "jose",
+        "identificacion": "1478",
+        "correo": "jose@gmail.com"
+    },
+    {
+        "nombre": "diego",
+        "identificacion": "1564",
+        "correo": "diego@gmail.com"
+    },
+    {
+        "nombre": "jeison",
+        "identificacion": "1584",
+        "correo": "jeison@gmail.com"
+    },
+    {
+        "nombre": "dayana",
+        "identificacion": "6584",
+        "correo": "dayana@gmail.com"
+    },
+    {
+        "nombre": "mao",
+        "identificacion": "1657",
+        "correo": "mao@gmail.com"
+    },
+    {
+        "nombre": "maitte",
+        "identificacion": "9876",
+        "correo": "maitte@gmail.com"
+    },
+    {
+        "nombre": "juan",
+        "identificacion": "4589",
+        "correo": "juan@gmail.com"
+    },
+    {
+        "nombre": "maria",
+        "identificacion": "1546",
+        "correo": "maria@gmail.com"
+    },
+    {
+        "nombre": "raul",
+        "identificacion": "4879",
+        "correo": "raul@gmail.com"
+    },
+    {
+        "nombre": "fabio",
+        "identificacion": "9568",
+        "correo": "fabio@gmail.com"
+    }
+]

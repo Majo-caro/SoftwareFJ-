@@ -1,0 +1,35 @@
+[
+    {
+        "cliente": "jeison",
+        "identificacion": "1584",
+        "correo": "jeison@gmail.com",
+        "tipo_servicio": "ReservaSala",
+        "servicio": "Sala VIP",
+        "descripcion": "Reserva Sala",
+        "costo_base": 100,
+        "duracion": 2,
+        "estado": "Confirmada"
+    },
+    {
+        "cliente": "majo",
+        "identificacion": "1234",
+        "correo": "majo@gmail.com",
+        "tipo_servicio": "AlquilerEquipo",
+        "servicio": "Laptop Gamer",
+        "descripcion": "Alquiler Equipo",
+        "costo_base": 80,
+        "duracion": 3,
+        "estado": "Confirmada"
+    },
+    {
+        "cliente": "mao",
+        "identificacion": "1657",
+        "correo": "mao@gmail.com",
+        "tipo_servicio": "AsesoriaEspecializada",
+        "servicio": "IA Empresarial",
+        "descripcion": "Asesoría Avanzado",
+        "costo_base": 200,
+        "duracion": 1,
+        "estado": "Cancelada"
+    }
+]

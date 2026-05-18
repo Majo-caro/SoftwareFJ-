@@ -1,17 +1,9 @@
-# =========================================
-# CLASE RESERVA
-# =========================================
-
-# Importamos excepciones
 from Modelos.excepciones import ReservaError
 
-# Importamos logger
 from Utils.logger import registrar_log
 
-# Clase Reserva
 class Reserva:
 
-    # Constructor
     def __init__(
         self,
         cliente,
@@ -25,44 +17,31 @@ class Reserva:
         self.estado = "Pendiente"
 
     # =====================================
-    # CONFIRMAR RESERVA
+    # CONFIRMAR
     # =====================================
 
     def confirmar(self):
 
-        try:
+        # VALIDAR DURACIÓN
 
-            # Validación
-            if self.duracion <= 0:
+        if self.duracion <= 0:
 
-                raise ReservaError(
-                    "Duración inválida"
-                )
-
-            # Cambio estado
-            self.estado = "Confirmada"
-
-            # Registrar evento
-            registrar_log(
-                "Reserva confirmada"
+            raise ReservaError(
+                "Duración inválida"
             )
 
-            print(
-                "Reserva confirmada"
-            )
+        self.estado = "Confirmada"
 
-        except ReservaError as error:
+        registrar_log(
+            "Reserva confirmada"
+        )
 
-            registrar_log(
-                f"ERROR: {error}"
-            )
-
-            print(
-                f"Error: {error}"
-            )
+        print(
+            "\nReserva confirmada"
+        )
 
     # =====================================
-    # CANCELAR RESERVA
+    # CANCELAR
     # =====================================
 
     def cancelar(self):
@@ -74,7 +53,7 @@ class Reserva:
         )
 
     # =====================================
-    # PROCESAR RESERVA
+    # PROCESAR
     # =====================================
 
     def procesar(self):
@@ -86,8 +65,9 @@ class Reserva:
             )
 
             costo = (
-                self.servicio
-                .calcular_costo()
+                self.servicio.calcular_costo(
+                    self.duracion
+                )
             )
 
             print(
@@ -96,12 +76,14 @@ class Reserva:
 
         except Exception as error:
 
-            registrar_log(
-                f"ERROR GENERAL: {error}"
+            registrar_log(error)
+
+            print(
+                f"\nERROR: {error}"
             )
 
         finally:
 
             print(
-                "Proceso finalizado\n"
+                "Proceso finalizado"
             )
